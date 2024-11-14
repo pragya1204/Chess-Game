@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+#chessBoard{
+    width: 640px;
+    height: 640px;
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid black;
+}
+
+.square{
+    width: 80px;
+    height: 80px;
+}
+
+.green{
+    background-color: rgb(12, 70, 3);
+}
+.dark{
+    background-color: rgb(231, 240, 232);
+}
+.piece{
+    padding: 1.45rem;
+}
