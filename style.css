@@ -17,14 +17,36 @@ body{
 .square{
     width: 80px;
     height: 80px;
-}
+    position: relative;
 
+}
+.square .dragging{
+    background-color: transparent;
+}
+.piece .dragging{
+    opacity: 0.8;
+    z-index: 10;
+}
 .green{
     background-color: rgb(12, 70, 3);
 }
-.dark{
-    background-color: rgb(231, 240, 232);
+.light{
+    background-color: rgb(213, 216, 214);
 }
 .piece{
     padding: 1.45rem;
+    position: relative;
+    z-index: 9;
+}
+#queen, #king{
+    padding: 1.1rem;
+}
+#bishop{
+    padding: 1.5rem;
+}
+.black svg{
+    fill: black;
+}
+.beige svg{
+   fill: rgb(106, 106, 50);
 }
