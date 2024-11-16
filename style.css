@@ -1,9 +1,9 @@
-body{
+/* body{
     display: flex;
     justify-content: center;
     
 
-}
+} */
 
 #chessBoard{
     width: 640px;
@@ -12,6 +12,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     border: 5px solid black;
+    margin-left: 6rem;
 }
 
 .square{
@@ -20,13 +21,15 @@ body{
     position: relative;
 
 }
-.square .dragging{
-    background-color: transparent;
+.square svg{
+    height: 50px;
+    z-index: -9;
 }
-.piece .dragging{
-    opacity: 0.8;
-    z-index: 10;
+path{
+    position: relative;
+    z-index:-10;
 }
+
 .green{
     background-color: rgb(12, 70, 3);
 }
@@ -34,16 +37,11 @@ body{
     background-color: rgb(213, 216, 214);
 }
 .piece{
-    padding: 1.45rem;
+    padding: 1.1rem;
     position: relative;
     z-index: 9;
 }
-#queen, #king{
-    padding: 1.1rem;
-}
-#bishop{
-    padding: 1.5rem;
-}
+
 .black svg{
     fill: black;
 }
