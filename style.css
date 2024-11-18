@@ -1,9 +1,7 @@
-/* body{
-    display: flex;
-    justify-content: center;
-    
+body{
+    background-color: rgb(29, 0, 0);
 
-} */
+}
 
 #chessBoard{
     width: 640px;
@@ -12,7 +10,8 @@
     display: flex;
     flex-wrap: wrap;
     border: 5px solid black;
-    margin-left: 6rem;
+    margin-left: 19rem;
+    margin-top: 2rem;
 }
 
 .square{
@@ -47,4 +46,13 @@ path{
 }
 .beige svg{
    fill: rgb(106, 106, 50);
+}
+
+
+/* Extra Styling */
+.information{
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 1.09rem;
 }
